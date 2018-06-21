@@ -17,4 +17,7 @@ interface ProductDAO {
 
     @Query("SELECT * FROM Product")
     fun getAllProducts(): Flowable<Product>
+
+    @Query("SELECT COUNT(DISTINCT productID)  FROM Product  where productName= :level and productThumb = 1")
+    fun getCount(level:Int): Int
 }
