@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MTP</string>
+    <string name="notyet">Website %1$s isn\'t yet available, I\'m working on it, please wait %2$s more days</string>
+    <string name="simple_progress_format">%1$d問/%2$d問</string>
+
+    %[flags][width][.precision][argsize]typechar is the template.
+
+    1 is a flag?
+    $ is the width?
+    # is the precision?
+    num is the argsize?
+    "str" is the typechar?
+
+    $s string
+    $d decimal integer
+    $f floating point number
+</resources>
