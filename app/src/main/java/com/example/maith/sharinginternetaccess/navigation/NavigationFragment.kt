@@ -34,6 +34,7 @@ class NavigationFragment : Fragment() {
         btnSsl.setOnClickListener { navigation?.navigateToSSL() }
         btnSpeechRe.setOnClickListener{navigation?.navigateToSpeech()}
         btnRoomDatabase.setOnClickListener { navigation?.navigateToRoomDatabase() }
+        btnAnimation.setOnClickListener{navigation?.navigateToAnimation()}
     }
 
     interface Navigation {
@@ -44,6 +45,7 @@ class NavigationFragment : Fragment() {
         fun navigateToSSL()
         fun navigateToSpeech()
         fun navigateToRoomDatabase()
+        fun navigateToAnimation()
     }
 
     companion object {

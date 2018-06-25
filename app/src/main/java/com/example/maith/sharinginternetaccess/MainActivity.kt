@@ -3,6 +3,7 @@ package com.example.maith.sharinginternetaccess
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.example.maith.sharinginternetaccess.androiddownloadmanager.AndroidDownLoadManagerFragment
+import com.example.maith.sharinginternetaccess.animation.sprite.AnimationFragment
 import com.example.maith.sharinginternetaccess.httprequest.HttpRequestFragment
 import com.example.maith.sharinginternetaccess.navigation.NavigationFragment
 import com.example.maith.sharinginternetaccess.okhttp.OkHttpFragment
@@ -79,6 +80,13 @@ class MainActivity : AppCompatActivity(), NavigationFragment.Navigation {
         val transaction = supportFragmentManager.beginTransaction()
         transaction.replace(R.id.container, RoomFragment(), RoomFragment.TAG)
         transaction.addToBackStack(RoomFragment.TAG)
+        transaction.commit()
+    }
+
+    override fun navigateToAnimation() {
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.container, AnimationFragment(), AnimationFragment.TAG)
+        transaction.addToBackStack(AnimationFragment.TAG)
         transaction.commit()
     }
 }
