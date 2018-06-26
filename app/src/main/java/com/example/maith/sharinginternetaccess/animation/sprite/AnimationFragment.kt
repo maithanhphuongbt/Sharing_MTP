@@ -55,7 +55,6 @@ class AnimationFragment : Fragment() {
             override fun onAnimationEnd(animation: Animation?) {
                 imgAnim.startAnimation(animLeft)
                 imgAnim.rotationY = 360f
-                imgAnim.rotationX = 90f
             }
 
             override fun onAnimationStart(animation: Animation?) {
