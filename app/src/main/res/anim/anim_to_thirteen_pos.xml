@@ -2,10 +2,10 @@
 <set xmlns:android="http://schemas.android.com/apk/res/android">
     <translate
         android:fromYDelta="100%"
-        android:toYDelta="0%"
-        android:duration="4000"/>
+        android:toYDelta="75%"
+        android:duration="@integer/anim_kangaroo_duration"/>
     <translate
         android:fromXDelta="100%"
-        android:toXDelta="0%"
-        android:duration="4000" />
+        android:toXDelta="75%"
+        android:duration="@integer/anim_kangaroo_duration" />
 </set>
